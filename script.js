@@ -24,16 +24,16 @@ function playRound(userSelection,compSelection){
         return "It's a tie!"
     }
     else if(
-         (userSelection === "rock" && compSelction === "scissor") ||
+         (userSelection === "rock" && compSelection === "scissor") ||
          (userSelection === "paper" && compSelection === "rock")  ||
          (userSelection === "scissor" && compSelection === "paper")
     ){
         userScore++
         userScoreEle.textContent = userScore
-        return 'You won! ${userSelection} beats ${compSelection}'
+        return `You won! ${userSelection} beats ${compSelection}`
     }else{
         compScore++
         compScoreEle.textContent = compScore
-        return 'You lose! ${compSelection} beats ${userSelection}'
+        return `You lose! ${compSelection} beats ${userSelection}`
     }
 }
